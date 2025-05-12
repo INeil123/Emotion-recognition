@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人脸情绪识别系统</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>人脸情绪识别系统</h1>
+        <div class="video-container">
+            <img src="{{ url_for('video_feed') }}" alt="视频流">
+        </div>
+        <div class="info-panel">
+            <h2>当前检测到的情绪：</h2>
+            <div id="emotion-display">等待检测...</div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html> 
